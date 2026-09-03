@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Connexion — GUARDIAN</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="auth-page">
+    <h1 class="brand" style="text-align:center; margin-bottom:28px;">GUARDI<span style="color:var(--gold-500)">AN</span></h1>
+    <div class="card">
+      <h2 style="margin-top:0; font-size:1.15rem;">Connexion</h2>
+      <form id="loginForm">
+        <label for="email">Email</label>
+        <input type="email" id="email" required autocomplete="email">
+
+        <label for="password">Mot de passe</label>
+        <input type="password" id="password" required autocomplete="current-password">
+
+        <div class="error-msg" id="errorMsg"></div>
+
+        <button type="submit" class="primary">Se connecter</button>
+      </form>
+      <p class="switch-link">Pas encore de compte ? <a href="/register.html">Créer un compte</a></p>
+    </div>
+  </div>
+
+  <script src="/js/login.js"></script>
+</body>
+</html>

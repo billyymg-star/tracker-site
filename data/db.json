@@ -1,0 +1,13 @@
+{
+  "users": [
+    {
+      "id": "731d59f2-99cf-4315-a099-800cdccc220f",
+      "email": "billyymg@gmail.com",
+      "name": "Billy Corneille YAMEOGO",
+      "passwordHash": "$2a$10$i1inBFgAAwFBubkgl2onKeLbFdBRULvjsC4wrp05VwpgTQLFukV.6",
+      "createdAt": "2026-09-03T09:32:32.208Z"
+    }
+  ],
+  "children": [],
+  "positions": []
+}

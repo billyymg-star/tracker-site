@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>GUARDIAN</title>
+<script>
+  fetch('/api/auth/me').then(res => {
+    window.location.href = res.ok ? '/dashboard.html' : '/login.html';
+  });
+</script>
+</head>
+<body></body>
+</html>
