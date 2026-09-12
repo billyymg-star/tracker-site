@@ -152,7 +152,7 @@ app.delete('/api/children/:id', requireAuth, (req, res) => {
  * ---------------------------------------------------------------- */
 
 app.post('/api/position', (req, res) => {
-  const { deviceId, lat, lon, alert, fixValid, gsmActive, battery } = req.body;
+  const { deviceId, lat, lon, fixValid, gsmActive, battery } = req.body;
 
   if (!deviceId || lat === undefined || lon === undefined) {
     return res.status(400).json({ error: 'deviceId, lat et lon sont requis.' });
@@ -165,7 +165,6 @@ app.post('/api/position', (req, res) => {
     deviceId,
     lat: parseFloat(lat),
     lon: parseFloat(lon),
-    alert: alert === true || alert === 'true',
     fixValid: fixValid === true || fixValid === 'true',
     gsmActive: gsmActive === undefined ? true : (gsmActive === true || gsmActive === 'true'),
     battery: battery !== undefined ? parseInt(battery, 10) : null,
